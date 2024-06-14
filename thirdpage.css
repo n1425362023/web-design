@@ -1,0 +1,121 @@
+body{
+    height:100%;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    background-size: cover;
+    opacity:1;
+    z-index: 1;
+}
+ul{
+    position:fixed;
+    list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+    border-radius: 10px;
+    z-index: 100;
+}
+li{
+    float:left;
+}
+a:linK,a:visited{
+    display: flex;
+    width:365px;
+    height: 40px;
+    font-weight: bold;
+    color:#f3f3f3;
+    background-color:#c2baed;
+    text-align:center;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+a:hover,a:active{
+    background-color:#898989;
+}
+
+.slide-box {
+    display:block;
+    position: absolute; 
+    top: 80px; 
+    overflow: hidden;;
+    
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 70%; 
+    height: 80%;
+    margin-left:10%;
+    z-index: 2;
+}
+
+.slide-item {
+    width: 80%;
+    height: 40%;
+    border:1px solid rgba(222, 222, 222, 0.423);
+    background-color: rgba(222, 222, 222, 0.423);
+    margin-right: 30px;
+    border-radius:20px;
+    overflow: hidden;
+}
+.slide-box::-webkit-scrollbar {
+    display: none; 
+}
+.slide-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.slide-img{
+    width:9%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonial{
+    background-color: #f1f1f1;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.text-info{
+    display: flex;
+    height: 60px;
+    width:100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-name {
+    font-family: 'mont serral', sans-serif;
+    line-height:110%;
+    font-size: 15px;
+    
+    color: #000000;
+}
+
+.text-name span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    color: #5298cb;
+}
+.slide-item p {
+    display: block;
+    color: #8baabf;
+    letter-spacing: 3px;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+    unicode-bidi: isolate;
+}
+.slide-box :hover{
+    background-color: rgba(248, 247, 247, 0.211);
+    box-shadow: 0 0 10px rgba(208, 80, 237, 0.793);
+    transform:scale(1.01,1.01);
+    transition: all 1s;
+}

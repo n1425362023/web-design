@@ -1,0 +1,130 @@
+body{
+    background-color:#e2eae1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+ul{
+    position:fixed;
+    list-style-type:none;
+	margin:0;
+	padding:0;
+    border-radius: 10px;
+	overflow:hidden;
+    z-index: 100;
+}
+li{
+    float:left;
+}
+a:linK,a:visited{
+    display: flex;
+    width:365px;
+    height: 40px;
+    font-weight: bold;
+    color:#f3f3f3;
+    background-color:#c2baed;
+    text-align:center;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+a:hover,a:active{
+    background-color:#898989;
+}
+#images {
+    position: absolute;
+    left: 10px;
+    top:50px;
+    width:99%;
+    height:500px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.toppicture1,.toppicture2,.toppicture3,.toppicture4{
+    overflow: hidden; 
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; 
+    animation-duration: 15s;
+ 
+}
+.toppicture1{
+    z-index: 1;
+    animation-delay:20s;
+    animation-name: roll1;
+    
+}
+.toppicture2{
+    z-index: 2;
+    animation-delay:14s;
+    animation-name: roll2;
+    
+}
+.toppicture3{
+    z-index: 3;
+    animation-delay:7s;
+    animation-name: roll3;
+    
+}
+.toppicture4{
+    z-index: 4;
+    animation-delay:2s;
+    animation-name: roll4;
+    
+}
+@keyframes roll1 {
+    0% {opacity:1; }
+    20%{opacity: 1;}
+    40%{opacity:0.5;}
+    60%{opacity: 0;}
+    100% { opacity:0;}
+}
+
+@keyframes roll2 {
+    0% {opacity:1; }
+    20%{opacity: 1;}
+    40%{opacity:0.5;}
+    60%{opacity: 0;}
+    100% { opacity:0;}
+}
+
+@keyframes roll3 {
+    0% {opacity:1; }
+    20%{opacity: 1;}
+    40%{opacity:0.5;}
+    60%{opacity: 0;}
+    100% { opacity:0;}
+}
+
+@keyframes roll4 {
+    0% {opacity:1; }
+    20%{opacity: 1;}
+    40%{opacity:0.5;}
+    60%{opacity: 0;}
+    100% { opacity:0;}
+}
+.icon{
+    
+    width:250px;
+    height:250px;
+    
+    float:left;
+    
+}
+.text{
+    display: block;
+    position: absolute;
+    left: 8px;
+    top:550px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 200%;
+    font-weight: bold;
+    color:#c2baed;
+    padding: 0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
